@@ -1,31 +1,28 @@
+import BaseCard from './BaseCard'
 import './ArticleCard.css'
 
 interface ArticleCardProps {
   image: string
   title: string
   hook: string
-  link?: string
+  link?: string | null
 }
 
 export default function ArticleCard({ image, title, hook, link }: ArticleCardProps) {
+  const buttons = [
+    link ? (
+      <a key="read" className="btn" href={link} target="_blank" rel="noopener noreferrer">
+        Read
+      </a>
+    ) : (
+      <span key="coming" className="btn disabled">Coming Soon</span>
+    ),
+  ]
+
   return (
-    <div className="article-card">
-      <div className="image-container">
-        <img className="article-image" src={image} alt={`${title} preview`} />
-      </div>
-      <div className="article-content">
-        <div>
-          <h3>{title}</h3>
-          <p className="hook">{hook}</p>
-        </div>
-        {link ? (
-          <a className="btn" href={link} target="_blank" rel="noopener noreferrer">
-            Read
-          </a>
-        ) : (
-          <span className="coming-soon">Coming soon</span>
-        )}
-      </div>
-    </div>
+    <BaseCard image={image} buttons={buttons}>
+      <h3>{title}</h3>
+      <p className="hook">{hook}</p>
+    </BaseCard>
   )
 }

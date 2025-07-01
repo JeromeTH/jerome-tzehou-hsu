@@ -1,31 +1,4 @@
-.project-card {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    padding: 1.5rem;
-    background: white;
-    border-radius: 12px;
-    margin-bottom: 2rem;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-    max-width: 100%;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-  }
-  
-  .project-image {
-    width: 300px;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    flex-shrink: 0;
-  }
-  
-  .project-content {
-    flex: 1;
-    min-width: 0;
-  }
-  
+
   .project-content h3 {
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -39,36 +12,6 @@
   
   .progress {
     font-size: 0.95rem;
-    margin-bottom: 1rem;
     color: #555;
   }
-  
-  .button-row {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .btn {
-    padding: 0.4rem 1rem;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: all 0.2s ease;
-  }
-  
-  .btn:hover {
-    background: #f0f0f0;
-    border-color: #aaa;
-  }
-
-  .btn.disabled {
-    pointer-events: none;
-    background: #eee;
-    color: #888;
-    border-color: #ccc;
-    cursor: default;
-  }
-  
   

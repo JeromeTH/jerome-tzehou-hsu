@@ -4,7 +4,7 @@ import covidAggressionImage from '../assets/covid-aggression.png'
 export default function Research() {
   return (
     <div>
-      <h2>Research</h2>
+      <h1>Research</h1>
       <ResearchCard
         image={covidAggressionImage}
         title="Increased Online Aggression During COVID-19 Lockdowns: Two-Stage Study of Deep Text Mining and Difference-in-Differences Analysis"

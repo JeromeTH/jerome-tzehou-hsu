@@ -1,10 +1,11 @@
-import './ProjectCard.css'
+// ProjectCard.tsx
+import BaseCard from './BaseCard'
 
 interface ProjectCardProps {
   image: string
   title: string
   description: string
-  progress: string
+  state: string
   githubLink?: string | null
   demoLink?: string | null
 }
@@ -13,7 +14,7 @@ export default function ProjectCard({
   image,
   title,
   description,
-  progress,
+  state,
   githubLink,
   demoLink,
 }: ProjectCardProps) {
@@ -31,14 +32,10 @@ export default function ProjectCard({
   ].filter(Boolean)
 
   return (
-    <div className="project-card">
-      <img className="project-image" src={image} alt={`${title} banner`} />
-      <div className="project-content">
-        <h3>{title}</h3>
-        <p className="description">{description}</p>
-        <p className="progress"><strong>Progress:</strong> {progress}</p>
-        {buttons.length > 0 && <div className="button-row">{buttons}</div>}
-      </div>
-    </div>
+    <BaseCard image={image} buttons={buttons}>
+      <h3>{title}</h3>
+      <p className="description">{description}</p>
+      <p className="state"><strong>State:</strong> {state}</p>
+    </BaseCard>
   )
 }

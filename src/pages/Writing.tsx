@@ -6,7 +6,7 @@ import bible from '../assets/bible.jpg'
 export default function Writing() {
   return (
     <div>
-      <h2>Writing</h2>
+      <h1>Writing</h1>
       <p style={{ maxWidth: '750px', marginBottom: '2rem' }}>
         Out side of computer science research, I also write in philosophy, theology, and music. 
         I've experienced that digging deeper into truth often leads to unexpected connections across disciplines, and 

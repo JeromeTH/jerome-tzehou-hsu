@@ -7,12 +7,12 @@ import wildfin from '../assets/wildfin.png'
 export default function Projects() {
   return (
     <div>
-      <h2>Projects</h2>
+      <h1>Projects</h1>
       <ProjectCard
         image={taihu}
         title="National Library AI Search Engine"
         description="An intelligent search platform built for the Taiwan National Library, integrating semantic retrieval, metadata filtering, and document-level reranking. Designed to handle scholarly archives and offer real-time question answering via LLMs."
-        progress="Hybrid retrieval and reranking core deployed. User interface and advanced benchmark generation in progress."
+        state="Active"
         githubLink="https://github.com/NCL-TAIHU/RAG"
         demoLink={null}
       />
@@ -22,7 +22,7 @@ export default function Projects() {
         title="Large-Scale ML Video Model Benchmarking system on Fish Videos in the Wild "
         description="Developing Pytorch equivalent of Google DeepMind Video reader, supporting distributed shard computing in loading and processing large-scale video datasets.
         NeurIPS Datasets and Benchmarks 2025 submission in progress."
-        progress="Under Submission, Releasing soon."
+        state="Submitted"
         githubLink={null}
         demoLink={null}
       />
@@ -35,7 +35,7 @@ export default function Projects() {
         Systems aims to help current and prospective members understand the team's historical codebases. 
         It performs a context-aware traversal of the codebase, deconstructs the code using abstract syntax trees, 
         and embeds the code into a vector database for semantic search."
-        progress="Under development" 
+        state="Paused" 
         githubLink="https://github.com/CornellDataScience/smart-search"
         demoLink={null}
       />
@@ -44,7 +44,7 @@ export default function Projects() {
         image={pltv}
         title="Lifetime Value Prediction for Mobile Advertising"
         description="Independently developed lifetime value prediction feature for mobile advertising startup Bubbleye. Utilized advanced machine learning techniques to predict user lifetime value, enhancing ad targeting and campaign effectiveness."
-        progress="Completed during internship at Bubbleye. Currently in production use."
+        state="Completed"
         githubLink={null}
         demoLink={null}
       />

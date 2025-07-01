@@ -1,3 +1,4 @@
+import BaseCard from './BaseCard'
 import './ResearchCard.css'
 
 interface ResearchCardProps {
@@ -5,8 +6,8 @@ interface ResearchCardProps {
   title: string
   venue: string
   authors: string
-  paperLink: string
-  codeLink: string
+  paperLink?: string | null
+  codeLink?: string | null
 }
 
 export default function ResearchCard({
@@ -17,18 +18,24 @@ export default function ResearchCard({
   paperLink,
   codeLink,
 }: ResearchCardProps) {
+  const buttons = [
+    paperLink && (
+      <a key="paper" className="btn" href={paperLink} target="_blank" rel="noopener noreferrer">
+        PAPER
+      </a>
+    ),
+    codeLink && (
+      <a key="code" className="btn" href={codeLink} target="_blank" rel="noopener noreferrer">
+        CODE
+      </a>
+    ),
+  ].filter(Boolean)
+
   return (
-    <div className="research-card">
-      <img className="research-image" src={image} alt="paper graphic" />
-      <div className="research-content">
-        <h3>{title}</h3>
-        <p className="venue">{venue}</p>
-        <p className="authors">{authors}</p>
-        <div className="button-row">
-          <a href={paperLink} className="btn" target="_blank" rel="noopener noreferrer">PAPER</a>
-          <a href={codeLink} className="btn" target="_blank" rel="noopener noreferrer">CODE</a>
-        </div>
-      </div>
-    </div>
+    <BaseCard image={image} buttons={buttons}>
+      <h3>{title}</h3>
+      <p className="venue">{venue}</p>
+      <p className="authors">{authors}</p>
+    </BaseCard>
   )
 }

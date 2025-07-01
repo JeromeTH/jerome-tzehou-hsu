@@ -1,7 +1,7 @@
 export default function Resume() {
     return (
       <div>
-        <h2>My Resume</h2>
+        <h1>My Resume</h1>
   
         {/* Inline PDF viewer */}
         <iframe
