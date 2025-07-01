@@ -12,7 +12,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         ☰
       </button>
       <div className={`sidebar-container ${isSidebarOpen ? 'open' : ''}`}>
-        <Sidebar />
+        <Sidebar onNavigate={() => setSidebarOpen(false)} />
       </div>
       <main className="main">{children}</main>
     </div>
