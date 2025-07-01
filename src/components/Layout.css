@@ -1,11 +1,22 @@
 .layout {
     display: flex;
-    min-height: 100vh;
-    background-color: white;
+    height: 100vh;
+    overflow: hidden;
   }
-
-.main {
-flex-grow: 1;
-padding: 2rem;
-overflow-y: auto;
-}
+  
+  /* ⬇️ This determines sidebar size, not Sidebar itself */
+  .sidebar-container {
+    width: 240px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+    background-color: #f4f4f4;
+  }
+  
+  .main {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  

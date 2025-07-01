@@ -1,0 +1,59 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .profile-image {
+    width: 200px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  
+  .quote-box {
+    flex: 1;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: italic;
+    color: #666;
+    line-height: 1.6;
+    min-width: 220px;
+    max-width: 480px;
+  }
+  
+  .animated-text {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .animated-word {
+    display: inline-flex;
+    white-space: nowrap;
+  }
+  
+  .animated-word span {
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+  .text-section {
+    line-height: 1.7;
+  }
+  

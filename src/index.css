@@ -13,6 +13,7 @@
 
 body {
   margin: 0;
+  font-size: 18px; /* Increased from browser default (~16px) */
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--bg);

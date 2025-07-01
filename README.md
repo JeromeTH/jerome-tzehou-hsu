@@ -67,3 +67,19 @@ export default tseslint.config([
   },
 ])
 ```
+Define vite.config.ts: 
+// https://vite.dev/config/
+export default defineConfig({
+  base: '/jerome-tzehou-hsu/',  // IMPORTANT: your repo name with slashes
+  plugins: [react()],
+})
+
+React: 
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <BrowserRouter basename="/jerome-tzehou-hsu">
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+)
