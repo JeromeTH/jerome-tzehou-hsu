@@ -3,6 +3,7 @@ import taihu from '../assets/taihu-mdd.svg'
 import pltv from '../assets/pltv.jpg'
 import smartsearch from '../assets/smartsearch.png'
 import wildfin from '../assets/wildfin.png'
+import critter from '../assets/critter.png'
 
 export default function Projects() {
   return (
@@ -39,6 +40,18 @@ export default function Projects() {
         githubLink="https://github.com/CornellDataScience/smart-search"
         demoLink={null}
       />
+
+        <ProjectCard
+        image={critter}
+        title="Critter World Evolution Simulator"
+        description="Class project of CS 2112: Honors Object-Oriented Programming. Built the parser and interpreter of a custom critter behavior language in Java, 
+        Multithreaded simluator and GUI using the MVC design pattern and JavaFX. Received A+ grade and highest project score in the honors Cornell CS cohort."
+        state="Completed. Unable to show code due to Cornell's academic integrity policy." 
+        githubLink={null}
+        demoLink={null}
+      />
+
+      
 
       <ProjectCard
         image={pltv}

@@ -6,13 +6,18 @@ export default function Home() {
     <div className="home-page">
       <div className="heading-container">
         <img className="profile-image" src={profile} alt="Profile" />
-        <div className="quote-box">
-          <AnimatedText text="AI solves problems; I want to understand why a problem is even worth solving." />
+        <div className='heading-content'> 
+            <div className="quote-box">
+            <AnimatedText text="AI solves problems; I want to understand why a problem is even worth solving." />
+            </div>
+            <div className="contact">
+                <p>Email: jth264@cornell.edu</p>
+            </div>
         </div>
       </div>
 
       <div className="text-section">
-        <h1>Hi, I'm Jerome Tze-Hou Hsu</h1>
+        <h1>Hi, I'm Jerome Hsu (許澤厚)</h1>
         <p>
         I'm a rising sophomore at Cornell University, majoring in Computer Science and Mathematics, intending a minor in Biomedical Engineering.
         I'm currently doing ML research in <a href="https://youngxinyu1802.github.io/labweb/" target="_blank" rel="noopener noreferrer">Professor Jennifer Sun's lab</a>.
@@ -20,11 +25,12 @@ export default function Home() {
         </p>
 
         <p>
-          I love questing after underlying truths that transcend disciplinary boundaries — using systems thinking as the compass.
+          I love digging deeper into truth and asking "why", because I love discovering unexpected but profound connections between seemingly unconnected areas.
+          Using systems thinking as the compass, I look at computer science through the lens of philosophy, and understand biology through mathematical language and structure.
           AI solves problems; I want to understand why a problem is even worth solving.
         </p>
         <p>
-          The foundation of my work is building complex and scalable software systems — especially in machine learning orchestration,
+          The foundation of my systems thinking is through building complex and scalable software systems — especially in machine learning orchestration,
           information retrieval, and large language models. But systems thinking to me isn't just a tool — it's a process. Just like writing
           expresses the world in natural language, systems thinking expresses it through logical modules and abstractions.
         </p>
@@ -32,6 +38,13 @@ export default function Home() {
           I hope to apply this process to areas that push the frontiers of human knowledge.
           That’s why I’m interested in AI-for-Science, and why I want to keep exploring biomedical engineering and systems biology in the long run.
         </p>
+
+        <p> 
+        Outside of work, I enjoy piano, soccer, table tennis, going on hikes, cooking, and hanging out.  
+        I'm actively looking for passionate peers to collaborate on future projects. <em>Please don't hesitate to reach out if you share similar interests or have exciting ideas to discuss!</em>
+        </p>
+
+
       </div>
     </div>
   )
