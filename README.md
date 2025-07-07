@@ -1,85 +1,63 @@
-# React + TypeScript + Vite
+# Jerome Hsu | Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the personal website of Jerome Hsu (許澤厚), built with React, TypeScript, and Vite. It showcases my background, interests, research, projects, and writing.
 
-Currently, two official plugins are available:
+## 🌟 Features
+- Animated introduction and personal philosophy
+- Research, projects, and writing sections
+- Responsive, modern design
+- Contact information
+- Custom favicon and tab title
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
+- Node.js (v16+ recommended)
+- npm or yarn
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/jerometh/jerome-tzehou-hsu.git
+   cd jerome-tzehou-hsu
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+4. Open [http://localhost:5173](http://localhost:5173) to view the site.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Build for Production
+```bash
+npm run build
+# or
+yarn build
 ```
+The output will be in the `dist/` directory.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 Deploy
+To deploy the site (for example, to GitHub Pages), use:
+```bash
+npm run deploy
 ```
-Define vite.config.ts: 
-// https://vite.dev/config/
-export default defineConfig({
-  base: '/jerome-tzehou-hsu/',  // IMPORTANT: your repo name with slashes
-  plugins: [react()],
-})
+This will build the project and publish it according to your deployment configuration (see your package.json and vite.config.ts for details).
 
-React: 
+## 📁 Project Structure
+- `src/` — React components, pages, and assets
+- `public/` — Static files (favicon, images, etc.)
+- `index.html` — Main HTML file
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <BrowserRouter basename="/jerome-tzehou-hsu">
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
-)
+## ✨ About
+This website is a portfolio and personal hub for sharing my journey in computer science, mathematics, biomedical engineering, and beyond. Feel free to reach out if you share similar interests or want to collaborate!
+
+---
+
+Built with ❤️ using React, TypeScript, and Vite.

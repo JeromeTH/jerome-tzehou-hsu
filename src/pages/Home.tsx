@@ -43,8 +43,6 @@ export default function Home() {
         Outside of work, I enjoy piano, soccer, table tennis, going on hikes, cooking, and hanging out.  
         I'm actively looking for passionate peers to collaborate on future projects. <em>Please don't hesitate to reach out if you share similar interests or have exciting ideas to discuss!</em>
         </p>
-
-
       </div>
     </div>
   )
