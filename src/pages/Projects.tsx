@@ -16,7 +16,7 @@ export default function Projects() {
         description={
           <>
             <p>
-              A <strong>modular system</strong> for composing and instantiating hybrid RAG architectures through a <strong>typed algebra of retrieval components</strong>.
+              An AI search platform with a <strong>typed algebra of retrieval components</strong> that <strong>spans the design space</strong> of hybrid RAG systems.
             </p>
             <p>
               Inspired by Docker/Kubernetes, it includes a <strong>custom state and image manager</strong> for reproducible system execution, and a <strong>live monitoring interface</strong> for benchmarking and feedback-driven evolution.
@@ -37,7 +37,7 @@ export default function Projects() {
         description={
           <>
             <p>
-              WildFins is a <strong>PyTorch-based framework</strong> for large-scale video model experimentation, designed to support behavioral understanding in marine biology. Inspired by DeepMind’s VideoReader, it enables <strong>efficient, reproducible training</strong> over long-form, multi-part videos with minimal overhead.
+              WildFins is a <strong>PyTorch-based framework</strong> for large-scale video model experimentation, designed to support rapid benchmarking of video understanding models. Inspired by DeepMind’s VideoReader, it enables <strong>efficient, reproducible training</strong> over long-form, multi-part videos with minimal overhead.
             </p>
             <ul className="list-disc pl-6 my-2">
               <li><strong>Clean separation</strong> between model, data, and evaluation configuration</li>

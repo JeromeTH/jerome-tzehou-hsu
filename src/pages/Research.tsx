@@ -1,8 +1,7 @@
 import ResearchCard from '../components/ResearchCard'
 import covidAggressionImage from '../assets/covid-aggression.png'
-
+import fish from '../assets/fish2.jpg'
 // Fish emoji placeholder image
-const fishImage = '🐟'
 
 export default function Research() {
   return (
@@ -10,7 +9,7 @@ export default function Research() {
       <h1>Research</h1>
 
       <ResearchCard
-        image={fishImage}
+        image={fish}
         title="WildFin: A Video Dataset of Fish Behavior In-the-Wild"
         venue="NeurIPS 2025 Datasets and Benchmarks (Under Review)"
         authors="Abigail Grassick, Jerome Tze-Hou Hsu, Max Whitton, Ethan Lin, Liam Gutierrez, Madelyn Hair, Haozheng Yu, Kristin Branson, Vivek Jayaraman, Michael A. Gil, Andrew M. Hein, Jennifer J. Sun"
