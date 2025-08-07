@@ -19,23 +19,21 @@ export default function Home() {
       <div className="text-section">
         <h1>Hi, I'm Jerome Hsu (許澤厚)</h1>
         <p>
-        I'm a rising sophomore at Cornell University, majoring in Computer Science and Mathematics. I aspire to be a philosopher engineer that harnesses mathematics to understand science, uncovering beauty of God's creation and the surpassing awesomeness of His Love. 
+        I'm a rising sophomore at Cornell University, majoring in Computer Science and Mathematics. I aspire to be a philosopher engineer that harnesses mathematics to facilitate scientific inquiry, uncovering the beauty of God's creation and the awesomeness of His Love. 
         </p>
         <p>
-        Rooted in deep philosophical inquiry into how things relate and interact, and powered by engineering precision, I design systems that drive progress in information retrieval, machine learning orchestration, and beyond. I'm currently doing ML research in <a href="https://youngxinyu1802.github.io/labweb/" target="_blank" rel="noopener noreferrer">Professor Jennifer Sun's lab</a>.
+        Rooted in deep philosophical inquiry into how things relate and interact, I design systems with engineering precision that drive progress in information retrieval, machine learning orchestration, and beyond. I'm currently doing ML research at <a href="https://youngxinyu1802.github.io/labweb/" target="_blank" rel="noopener noreferrer">Professor Jennifer Sun's lab</a>.
         Looking ahead, I plan to build systems that deeply understand the natural world, starting from the physical foundations: quantum chemistry and drug discovery, and eventually systems biology and neuroscience.
         </p>
-        
         <p>
-          I love digging deeper into truth and asking "why", because I love discovering unexpected but profound connections between seemingly unconnected areas.
+          I love digging deeper into truth and asking "why", because I love discovering profound connections between seemingly unconnected areas.
           Using systems thinking as the compass, I look at computer science through the lens of philosophy, and understand biology through mathematical language and structure.
           AI solves problems; I want to understand why a problem is even worth solving.
         </p>
         <p>
-          I like systems because of its incredible expressiveness and creative potential. Just like writing
-          expresses the world in emotions and imagery, I see systems thinking as expressing the world through logical modules and abstractions. A combination can create something truly grounded and moving. 
+          I like systems because of its incredible expressiveness and creative potential. Just like creative writing
+          expresses the world in emotions and imagery, I see systems thinking as expressing the world through logical modules and abstractions. A combination of both can create something truly grounded and moving. 
         </p>
-
         <p> 
         I'm a part of <a href="https://cornelldata.science/" target="_blank" rel="noopener noreferrer">Cornell Data Science</a> team and <a href="https://www.crucornell.com/" target="_blank" rel="noopener noreferrer">CRU</a>. 
         Outside of work, I enjoy piano, soccer, table tennis, going on hikes, cooking, and hanging out.  
