@@ -27,7 +27,7 @@ export default function Writing() {
         link="https://medium.com/@jthsu20/platos-allegory-of-the-cave-and-the-conformist-5cab43e4e832"
       />
 
-        <ArticleCard
+      <ArticleCard
         image={star}
         title="Perfectly Imperfect. What playing Bach taught me"
         hook="For a frustrated soul that questions whether efforts are even worth it."

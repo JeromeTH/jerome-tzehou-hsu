@@ -1,10 +1,11 @@
 // ProjectCard.tsx
 import BaseCard from './BaseCard'
+import type { ReactNode } from 'react';
 
 interface ProjectCardProps {
   image: string
   title: string
-  description: string
+  description: ReactNode
   state: string
   githubLink?: string | null
   demoLink?: string | null
@@ -34,7 +35,7 @@ export default function ProjectCard({
   return (
     <BaseCard image={image} buttons={buttons}>
       <h3>{title}</h3>
-      <p className="description">{description}</p>
+      <p className="description">{description}</p> 
       <p className="state"><strong>State:</strong> {state}</p>
     </BaseCard>
   )
