@@ -57,10 +57,18 @@ export default function Projects() {
       <ProjectCard
         image={smartsearch}
         title="CDS SmartSearch"
-        description="Project lead in the development of a smart search engine for Cornell Data Science Project Team. 
-        System aims to help current and prospective members understand the team's historical codebases. 
-        It performs a context-aware traversal of the codebase, deconstructs the code using abstract syntax trees, 
-        and embeds the code into a vector database for semantic search."
+        description={
+          <>
+            <p>
+              Project lead building a smart search engine for the Cornell Data Science Project Team to help members explore and understand historical codebases.
+            </p>
+            <ul className="list-disc pl-6 my-2">
+              <li><strong>Traversal:</strong> context-aware codebase walking</li>
+              <li><strong>Analysis:</strong> AST-driven code deconstruction</li>
+              <li><strong>Search:</strong> semantic retrieval via vector embeddings</li>
+            </ul>
+          </>
+        }
         state="Paused"
         githubLink="https://github.com/CornellDataScience/smart-search"
         demoLink={null}
@@ -69,8 +77,19 @@ export default function Projects() {
       <ProjectCard
         image={critter}
         title="Critter World Evolution Simulator"
-        description="Class project of CS 2112: Honors Object-Oriented Programming. Built the parser and interpreter of a custom critter behavior language in Java, 
-        multithreaded simulator and GUI using the MVC design pattern and JavaFX. Received <strong>A+ grade</strong> and <strong>highest project score</strong> in the honors Cornell CS cohort."
+        description={
+          <>
+            <p>
+              Class project for <strong>CS 2112: Honors Object-Oriented Programming</strong>. Built a full simulation of evolving critters driven by a custom behavior language.
+            </p>
+            <ul className="list-disc pl-6 my-2">
+              <li><strong>Language tooling:</strong> parser and interpreter for the DSL (Java)</li>
+              <li><strong>Engine:</strong> multithreaded simulator</li>
+              <li><strong>UI:</strong> JavaFX GUI using the <strong>MVC</strong> pattern</li>
+            </ul>
+            <p><strong>Result:</strong> A+ grade and highest project score in the honors cohort.</p>
+          </>
+        }
         state="Completed. Unable to show code due to Cornell's academic integrity policy."
         githubLink={null}
         demoLink={null}
@@ -79,7 +98,18 @@ export default function Projects() {
       <ProjectCard
         image={pltv}
         title="Lifetime Value Prediction for Mobile Advertising"
-        description="Independently developed <strong>lifetime value prediction feature</strong> for mobile advertising startup Bubbleye. Utilized <strong>advanced machine learning techniques</strong> to predict user lifetime value, enhancing ad targeting and campaign effectiveness."
+        description={
+          <>
+            <p>
+              Independently developed a <strong>lifetime value (LTV) prediction</strong> feature for Bubbleye, a mobile advertising startup.
+            </p>
+            <ul className="list-disc pl-6 my-2">
+              <li><strong>Modeling:</strong> user-level LTV forecasting for campaign optimization</li>
+              <li><strong>Pipeline:</strong> data preprocessing, training, evaluation, and deployment hooks</li>
+              <li><strong>Impact:</strong> improved targeting and budget allocation</li>
+            </ul>
+          </>
+        }
         state="Completed"
         githubLink={null}
         demoLink={null}
